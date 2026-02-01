@@ -16,7 +16,7 @@ const MainLayout = () => {
     const inApp = segments[0] === 'app)';
     if (isAuthenticated && !inApp) {
       // Redirect to the Home page if authenticated
-      router.replace('home');
+      router.replace('account');
     } else if (isAuthenticated == false) {
       // Redirect to login if not authenticated
       router.replace('signIn');

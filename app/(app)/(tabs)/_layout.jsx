@@ -38,6 +38,8 @@ export default function _layout() {
                 headerTitle: "KIOSK", // 👈 same title
                 headerTitleAlign: "center",
                 sceneStyle: { backgroundColor: 'transparent' },
+                tabBarActiveTintColor: '#156A18',   // active tab text
+                tabBarInactiveTintColor: '#9ca3af', // inactive tab text
             }}>
                 <Tabs.Screen
                     name="cart"

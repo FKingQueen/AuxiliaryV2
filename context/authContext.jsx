@@ -34,6 +34,7 @@ export const AuthContextProvider = ({ children }) => {
             let data = docSnap.data();
             const updatedUser = { ...user, ...data };
             setUser(updatedUser);
+            console.log("Updated user data:", updatedUser);
         } else {
             console.log("No such user data!");
         }
