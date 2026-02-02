@@ -1,21 +1,13 @@
 import { useRouter } from 'expo-router';
-import { Pressable, Text, View } from 'react-native';
-import {
-    heightPercentageToDP as hp
-} from "react-native-responsive-screen";
+import { Text, View } from 'react-native';
 
 export default function Cart() {
     const router = useRouter();
     return (
-        <View>
-            <Pressable onPress={() => router.push("/home")}>
-                <Text
-                    style={{ fontSize: hp(1.5) }}
-                    className="text-right text-neutral-600 font-semibold"
-                >
-                    Go back home
-                </Text>
-            </Pressable>
+        <View className="flex-1 p-3">
+            <View className="bg-white rounded shadow p-4 mb-3 h-52">
+                <Text className="text-lg font-semibold">Welcome to the Cart Screen</Text>
+            </View>
         </View>
     )
 }
